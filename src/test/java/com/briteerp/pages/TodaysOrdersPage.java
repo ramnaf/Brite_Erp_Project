@@ -10,4 +10,8 @@ public class TodaysOrdersPage {
     }
 
     //TODO: Write you Page Object Model below
+
+
+    @FindBy(xpath = "/html/body/div[1]/div[1]/div[1]/div[13]/ul[2]/li[1]/a")
+    WebElement todaysOrderPageButton;
 }

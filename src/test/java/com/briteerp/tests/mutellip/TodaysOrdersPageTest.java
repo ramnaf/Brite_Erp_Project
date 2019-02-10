@@ -5,18 +5,13 @@ import com.briteerp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class NewOrderPageTest extends TestBase{
-
-
-
+public class TodaysOrdersPageTest extends TestBase {
     @Test
-    public void saveOrders(){
+    public void lunchAccountClick(){
         pages.login().login(ConfigurationReader.getProperty("managerUsername"),
                 ConfigurationReader.getProperty("managerPassword"));
-        BrowserUtils.waitForClickablility(pages.getMenu().new_order,10);
+        BrowserUtils.waitForClickablility(pages.getMenu().todays_order,10);
         BrowserUtils.wait(5);
-
-        pages.NewOrderPage().saveButton.click();
 
 
     }

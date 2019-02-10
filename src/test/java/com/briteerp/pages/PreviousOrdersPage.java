@@ -11,18 +11,21 @@ public class PreviousOrdersPage {
     //TODO: Write you Page Object Model below
 
 
-    public static@FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/table/tbody/tr[1]/td[1]/div/input")
-    WebElement confirmOrderCheckBox;
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/table/tbody/tr[1]/td[1]/div/input")
+    public WebElement confirmOrderCheckBox;
 
-    public static@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[1]/button")
-    WebElement printButon;
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[1]/button")
+    public WebElement printButon;
 
-    public static@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[1]/ul/li/a")
-    WebElement lunchOrderButton;
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[1]/ul/li/a")
+    public WebElement lunchOrderButton;
 
-    public static@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[2]/button")
-    WebElement actionButton;
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/button")
+    public WebElement print;
 
-    public static@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[2]/ul/li[1]/a")
-    WebElement exportButton;
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[2]/button")
+    public WebElement actionButton;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[2]/ul/li[1]/a")
+    public WebElement exportButton;
 }
