@@ -25,5 +25,6 @@ public class SearchVendorsByNameTest extends TestBase {
 
         pages.getNewOderPage().searchMore.click();
         BrowserUtils.wait(5);
+
     }
 }
