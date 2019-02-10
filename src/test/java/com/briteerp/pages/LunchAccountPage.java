@@ -30,8 +30,8 @@ public class LunchAccountPage {
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/table/tbody[2]/tr[1]/td[2]/div/input")
     public WebElement lunch_InvoicingCheckBox;
 
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[2]/button")
-    public WebElement actionButon;
+    @FindBy(xpath = "//button[contains(text(),'Action')]")
+    public WebElement actionButton;
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[2]/ul/li[1]/a")
     public WebElement exportButton;

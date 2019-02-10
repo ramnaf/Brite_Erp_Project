@@ -16,7 +16,7 @@ public class NewOrderPageTest extends TestBase{
         BrowserUtils.waitForClickablility(pages.getMenu().new_order,10);
         BrowserUtils.wait(5);
 
-        pages.NewOrderPage().saveButton.click();
+        pages.getNewOderPage().saveButton.click();
 
 
     }

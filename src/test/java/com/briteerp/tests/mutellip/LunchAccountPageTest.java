@@ -24,31 +24,13 @@ public class LunchAccountPageTest extends TestBase{
         BrowserUtils.waitForClickablility(pages.getMenu().lunch_account,10);
         BrowserUtils.wait(5);
 
-        pages.LunchAccountPage().lunch_InvoicingManager3.click();
-        pages.LunchAccountPage().lunch_InvoicingCheckBox.click();
-        pages.LunchAccountPage().actionButton.click();
-        pages.LunchAccountPage().exportButton.click();
+        pages.getLunchAccountPage().lunch_InvoicingManager3.click();
+        pages.getLunchAccountPage().lunch_InvoicingCheckBox.click();
+        pages.getLunchAccountPage().actionButton.click();
+        pages.getLunchAccountPage().exportButton.click();
 
 
 
     }
-
-
-    @Test
-    public void export(){
-        pages.login().login(ConfigurationReader.getProperty("managerUsername"),
-                ConfigurationReader.getProperty("managerPassword"));
-        BrowserUtils.waitForClickablility(pages.getMenu().lunch_account,10);
-        BrowserUtils.wait(5);
-
-        pages.LunchAccountPage().lunch_InvoicingManager3.click();
-        pages.LunchAccountPage().lunch_InvoicingCheckBox.click();
-        pages.LunchAccountPage().actionButton.click();
-        pages.LunchAccountPage().deleteButton.click();
-
-
-
-    }
-
 
 }

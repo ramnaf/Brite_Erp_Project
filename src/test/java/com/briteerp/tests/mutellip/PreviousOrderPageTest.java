@@ -16,7 +16,7 @@ public class PreviousOrderPageTest extends TestBase{
         BrowserUtils.wait(5);
 
 
-        pages.PreviousOrdersPage().confirmOrderCheckBox.click();
+        pages.getPreviousOrdersPage().confirmOrderCheckBox.click();
         Assert.assertTrue(pages.getPreviousOrdersPage().confirmOrderCheckBox.isSelected());
 
     }
@@ -28,10 +28,11 @@ public class PreviousOrderPageTest extends TestBase{
         BrowserUtils.waitForClickablility(pages.getMenu().previous_order,10);
         BrowserUtils.wait(5);
 
-        pages.PreviousOrdersPage().confirmOrderCheckBox.click();
-        pages.PreviousOrdersPage().printButon.click();
-        pages.PreviousOrdersPage().lunchOrderButton.click();
-        pages.PreviousOrdersPage().print.click();
+
+        pages.getPreviousOrdersPage().confirmOrderCheckBox.click();
+        pages.getPreviousOrdersPage().printButon.click();
+        pages.getPreviousOrdersPage().lunchOrderButton.click();
+        pages.getPreviousOrdersPage().print.click();
 
 
 
@@ -44,9 +45,9 @@ public class PreviousOrderPageTest extends TestBase{
         BrowserUtils.waitForClickablility(pages.getMenu().previous_order,10);
         BrowserUtils.wait(5);
 
-        pages.PreviousOrdersPage().confirmOrderCheckBox.click();
-        pages.PreviousOrdersPage().actionButton.click();
-        pages.PreviousOrdersPage().exportButton.click();
+        pages.getPreviousOrdersPage().confirmOrderCheckBox.click();
+        pages.getPreviousOrdersPage().actionButton.click();
+        pages.getPreviousOrdersPage().exportButton.click();
 
     }
 
