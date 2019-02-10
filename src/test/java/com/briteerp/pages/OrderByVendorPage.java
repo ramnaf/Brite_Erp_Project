@@ -11,6 +11,7 @@ public class OrderByVendorPage {
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
+    //TODO: Write you Page Object Model below
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/table/tfoot/tr/td[8]")
     public  WebElement totalPrice;

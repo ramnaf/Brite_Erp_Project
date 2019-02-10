@@ -5,20 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class NewOderPage {
-    public NewOderPage(){
+public class LunchAccountPage {
 
+    public LunchAccountPage(){
         PageFactory.initElements(Driver.getDriver(),this);
-
     }
     //TODO: Write you Page Object Model below
 
-    public static @FindBy(xpath = "//div[@class='o_form_sheet']//td[@class='o_field_x2many_list_row_add']/a")
-    WebElement AddAnItem;
+    @FindBy(xpath = "/html/body/div[1]/div[1]/a/img")
+    public WebElement logo;
 
-
-
-
+    @FindBy(xpath = "/html/body/div[1]/div[1]/div[2]/a/span")
+    public WebElement copyRigt;
 
 
 

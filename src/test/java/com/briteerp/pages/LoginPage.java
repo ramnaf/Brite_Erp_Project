@@ -14,24 +14,25 @@ public class LoginPage extends TestBase {
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
+    //TODO: Dont touch this class please !!!!!!!!!!!
 
-    static	@FindBy(xpath = "html/body/div[1]/div/div[2]/a[2]")
-    WebElement demoAccount;
+    @FindBy(xpath = "html/body/div[1]/div/div[2]/a[2]")
+    public WebElement demoAccount;
 
-    static	    @FindBy(xpath = ".//*[@id='login']")
-    WebElement email;
+   @FindBy(xpath = ".//*[@id='login']")
+    public WebElement email;
 
-    static    @FindBy(xpath = ".//*[@id='password']")
-    WebElement password;
+    @FindBy(xpath = ".//*[@id='password']")
+    public WebElement password;
 
-    static    @FindBy(xpath = ".//*[@id='wrapwrap']/main/div/form/div[4]/button")
-    WebElement singinButton;
+   @FindBy(xpath = ".//*[@id='wrapwrap']/main/div/form/div[4]/button")
+    public WebElement singinButton;
 
-    static	 @FindBy(xpath = "//*[@id=\"oe_main_menu_navbar\"]/div[2]/ul[1]/li[13]/a/span")
-    WebElement LucnModel;
+   @FindBy(xpath = "//*[@id=\"oe_main_menu_navbar\"]/div[2]/ul[1]/li[13]/a/span")
+    public WebElement LucnModel;
 
-    static  @FindBy(xpath = "//button[@class='btn btn-sm btn-primary']")
-    WebElement okButton;
+    @FindBy(xpath = "//button[@class='btn btn-sm btn-primary']")
+    public WebElement okButton;
 
     public void login(String username,String psw){
 

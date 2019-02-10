@@ -11,6 +11,8 @@ public class Menu{
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    //TODO: Dont touch this class please !!!!!!!!!!!
+
     @FindBy(xpath = "//span[contains(text(),'New Order')]")
     public WebElement new_order;
 
