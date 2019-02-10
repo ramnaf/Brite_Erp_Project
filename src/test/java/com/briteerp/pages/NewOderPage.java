@@ -57,9 +57,13 @@ public class NewOderPage {
     @FindBy(xpath = "//a[.='Search More...']")
     public WebElement searchMore;
 
-    @FindBy(xpath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']")
+    @FindBy(xpath = "//div[@class='o_input_dropdown']//input[@type='text']")
+    public WebElement selectInput;
 
+    @FindBy(xpath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']")
     public WebElement ulList;
+
+
 
 
 }

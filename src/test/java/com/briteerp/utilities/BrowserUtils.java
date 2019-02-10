@@ -221,6 +221,7 @@ public class BrowserUtils {
         }
 
     }
+
     public static void uploadFile(String fileName){
         StringSelection stringSelection = new StringSelection(fileName);
         //Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
