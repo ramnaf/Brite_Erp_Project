@@ -1,4 +1,4 @@
 package com.briteerp.tests.belkiz;
 
-public class test1 {
+public class SearchVendorsByTagTest {
 }
