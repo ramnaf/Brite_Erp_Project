@@ -4,6 +4,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -21,6 +23,8 @@ public abstract class TestBase {
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
     protected static WebDriverWait wait;
+    protected static Actions actions;
+    protected static Select select;
 
 
     @BeforeMethod(alwaysRun = true)
@@ -29,6 +33,9 @@ public abstract class TestBase {
         pages = new Pages();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
+
+        actions=new Actions(Driver.getDriver());
+
 
     }
 

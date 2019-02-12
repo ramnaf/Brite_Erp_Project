@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 public class LoginPage extends TestBase {
@@ -41,7 +42,7 @@ public class LoginPage extends TestBase {
         email.sendKeys(username);
         password.sendKeys(psw);
         singinButton.click();
-
+wait.until(ExpectedConditions.titleContains("nbo"));
         LucnModel.click();
 
         Actions actToOkButton = new Actions(Driver.getDriver());
@@ -51,5 +52,7 @@ public class LoginPage extends TestBase {
         okButton.click();
 
     }
+
+
 
 }
