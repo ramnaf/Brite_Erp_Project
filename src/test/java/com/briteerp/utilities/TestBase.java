@@ -29,6 +29,7 @@ public abstract class TestBase {
         pages = new Pages();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
+
     }
 
     @AfterMethod(alwaysRun = true)

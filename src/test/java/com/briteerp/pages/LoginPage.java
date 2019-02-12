@@ -14,6 +14,7 @@ public class LoginPage extends TestBase {
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
+
     //TODO: Dont touch this class please !!!!!!!!!!!
 
     @FindBy(xpath = "html/body/div[1]/div/div[2]/a[2]")
@@ -48,6 +49,7 @@ public class LoginPage extends TestBase {
         actToOkButton.moveToElement(okButton).perform();   // in Actions, we have to do the perform  in order to execute
 
         okButton.click();
+
     }
 
 }

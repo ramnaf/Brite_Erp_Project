@@ -13,10 +13,10 @@ public class NewOderPage {
     }
     //TODO: Write you Page Object Model below
 
-    public @FindBy(xpath = "//div[@class='o_form_sheet']//td[@class='o_field_x2many_list_row_add']/a")
+    public @FindBy(linkText = "Add an item")
     WebElement AddAnItem;
 
-    public @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/div/div[2]/div[6]/div[2]/table/tbody/tr[1]/td[1]/div/div/in  put")
+    public @FindBy(xpath = "//div[@class='o_input_dropdown']//input[@type='text']")
 
     WebElement DropDownBox ;
 
@@ -49,9 +49,38 @@ public class NewOderPage {
     WebElement saveItemButton ;
 
 
-    public  @FindBy(xpath = "o_web_client")
+    public  @FindBy(className = "modal-content")
 
-    WebElement newOrderPageDisplay ;
+    WebElement createProductForm ;
+
+
+    public  @FindBy(xpath = "//th[contains(text(),'Product')]")
+
+    WebElement product ;
+
+    public  @FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/h4[1]")
+
+    WebElement createProduct ;
+
+    public  @FindBy(xpath = "//label[contains(text(),'Category')]")
+
+    WebElement category ;
+
+    public  @FindBy(xpath = " //label[contains(text(),'Vendor')]")
+
+    WebElement vendor ;
+
+    public  @FindBy(xpath = "//label[contains(text(),'Price')]")
+
+    WebElement price ;
+
+
+    public  @FindBy(xpath = "//span[@class='o_stat_text o_not_hover text-success']")
+
+    WebElement active ;
+
+
+
 
 
 
